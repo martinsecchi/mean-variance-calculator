@@ -14,7 +14,7 @@ class UnitTests(unittest.TestCase):
             'min': [[0, 1, 2], [0, 3, 6], 0],
             'sum': [[9, 12, 15], [3, 12, 21], 36]
         }
-        self.assertEqual(actual, expected, "Expected calculate() to return the correct dictionary for [0,1,2,3,4,5,6,7,8]"
+        self.assertEqual(actual, expected, "Expected calculate() to return the correct dictionary for [0,1,2,3,4,5,6,7,8]")
 
     def test_calculate_with_few_digits(self):
         self.assertRaisesRegex(ValueError, "List must contain nine numbers.", calculate, [2, 6, 2, 8, 4, 0, 1])
